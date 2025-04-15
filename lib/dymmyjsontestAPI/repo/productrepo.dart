@@ -8,14 +8,9 @@ class DummyJsonProductRepo {
 
   Future<DummyProductModel?> getDummyData() async {
     final String url = Apibaseurl.DummyJsonURL;
-    print("Fetching from: $url");
-
     try {
       final response = await apihelperserver.getAPI(url);
-      final jsonMap = jsonDecode(response.body) as Map<String, dynamic>;
-      final data = DummyProductModel.fromJson(jsonMap);
-      print("Fetched product count: ${data.products?.length ?? 0}");
-      return data;
+      return DummyProductModel.fromJson(response);
     } catch (e) {
       print("Error fetching dummy data: $e");
       return null;

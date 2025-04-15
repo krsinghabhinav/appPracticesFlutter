@@ -1,22 +1,20 @@
-import 'package:apppreacticeall/dymmyjsontestAPI/model/categoryProductModel.dart';
-import 'package:apppreacticeall/dymmyjsontestAPI/repo/productrepo.dart';
 import 'package:get/get.dart';
+import '../model/categoryProductModel.dart';
+import '../repo/productrepo.dart';
 
 class DummyJsonProductController extends GetxController {
   final DummyJsonProductRepo dummyJsonProductRepo = DummyJsonProductRepo();
 
-  var dummyData = DummyProductModel().obs;
+  var dummyData = Rxn<DummyProductModel>();
   var isLoading = false.obs;
 
   var productList = <Products>[].obs;
   var categoryList = <String>[].obs;
-  var selectedCategory = 'All'.obs; // Track the selected category
+  var selectedCategory = 'All'.obs;
 
-  // Function to get the data
   Future<void> getDummyData() async {
     try {
       isLoading.value = true;
-
       final response = await dummyJsonProductRepo.getDummyData();
       if (response != null) {
         dummyData.value = response;
@@ -24,7 +22,6 @@ class DummyJsonProductController extends GetxController {
         final products = response.products ?? [];
         productList.assignAll(products);
 
-        // Add unique categories including 'All'
         final categories = <String>{'All'};
         for (var product in products) {
           if (product.category != null) {
@@ -40,14 +37,13 @@ class DummyJsonProductController extends GetxController {
     }
   }
 
-  // Function to filter products based on the selected category
   void filterByCategory(String category) {
     selectedCategory.value = category;
     if (category == 'All') {
-      productList.assignAll(dummyData.value.products ?? []);
+      productList.assignAll(dummyData.value?.products ?? []);
     } else {
       productList.assignAll(
-        (dummyData.value.products ?? [])
+        (dummyData.value?.products ?? [])
             .where((product) => product.category == category)
             .toList(),
       );
