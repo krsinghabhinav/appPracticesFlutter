@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Electronics",
+      "desc": "Latest electronic gadgets and devices.",
+      "price": 199.99,
+      "size": "Medium",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Fashion",
+      "desc": "Trendy and stylish fashion wear.",
+      "price": 49.99,
+      "size": "Small",
+      "images": ["fashion1.jpg", "fashion2.jpg"]
+    },
+    {
+      "id": 3,
+      "name": "Groceries",
+      "desc": "Essential grocery items.",
+      "price": 15.99,
+      "size": "Large",
+      "images": ["grocery1.jpg", "grocery2.jpg"]
+    },
+    {
+      "id": 4,
+      "name": "Home & Kitchen",
+      "desc": "Quality home and kitchen products.",
+      "price": 89.99,
+      "size": "Large",
+      "images": ["home1.jpg", "home2.jpg"]
+    },
+    {
+      "id": 5,
+      "name": "Books",
+      "desc": "A wide range of books for all tastes.",
+      "price": 12.99,
+      "size": "Small",
+      "images": ["book1.jpg", "book2.jpg"]
+    },
+    {
+      "id": 6,
+      "name": "Toys & Games",
+      "desc": "Fun toys and games for kids.",
+      "price": 24.99,
+      "size": "Medium",
+      "images": ["toy1.jpg", "toy2.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Health & Beauty",
+      "desc": "Beauty and wellness products.",
+      "price": 29.99,
+      "size": "Medium",
+      "images": ["health1.jpg", "health2.jpg"]
+    },
+    {
+      "id": 8,
+      "name": "Sports & Fitness",
+      "desc": "Sports gear and fitness equipment.",
+      "price": 119.99,
+      "size": "Large",
+      "images": ["sports1.jpg", "sports2.jpg"]
+    },
+    {
+      "id": 9,
+      "name": "Automotive",
+      "desc": "Car parts and accessories.",
+      "price": 49.99,
+      "size": "Medium",
+      "images": ["auto1.jpg", "auto2.jpg"]
+    },
+    {
+      "id": 10,
+      "name": "Stationery",
+      "desc": "Office supplies and stationery items.",
+      "price": 9.99,
+      "size": "Small",
+      "images": ["stationery1.jpg", "stationery2.jpg"]
+    }
+  ]
+  
