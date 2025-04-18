@@ -9,6 +9,8 @@ import 'ShoppingApp/ShoppingApp.dart';
 import 'calculator/calculator.dart';
 import 'categories/ui/categoryUi.dart';
 import 'categorytest/ui/home_page.dart';
+import 'date/ui/DatePickerScreen.dart';
+import 'date/ui/displaydays2.dart';
 import 'dymmyjsontestAPI/ui/DummyuidatabyControl.dart';
 import 'dymmyjsontestAPI/ui/ProductListScreen.dart';
 import 'dymmyjsontestAPI/ui/dummyUIData.dart';
@@ -28,11 +30,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ProductListScreen(),
+      home: DatePickerCarousel(),
     );
   }
 }
