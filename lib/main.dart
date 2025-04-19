@@ -9,8 +9,10 @@ import 'ShoppingApp/ShoppingApp.dart';
 import 'calculator/calculator.dart';
 import 'categories/ui/categoryUi.dart';
 import 'categorytest/ui/home_page.dart';
+import 'date/ui/ClassScheduleScreen.dart';
 import 'date/ui/DatePickerScreen.dart';
 import 'date/ui/displaydays2.dart';
+import 'date/ui/uiday3.dart';
 import 'dymmyjsontestAPI/ui/DummyuidatabyControl.dart';
 import 'dymmyjsontestAPI/ui/ProductListScreen.dart';
 import 'dymmyjsontestAPI/ui/dummyUIData.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DatePickerCarousel(),
+      home: Uiday3(),
     );
   }
 }

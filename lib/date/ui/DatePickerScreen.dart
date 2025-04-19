@@ -197,6 +197,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 import '../controller/DateController.dart';
+import 'easytimelineUI.dart';
 
 // class DateSelectorScreen extends StatelessWidget {
 //   final DateController controller = Get.put(DateController());
@@ -387,6 +388,7 @@ class DateSelectorScreen extends StatelessWidget {
               ),
             );
           }),
+          Easytimelineui()
         ],
       ),
     );
